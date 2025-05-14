@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScrollScape</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .parallax {
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .parallax h1 {
+      color: white;
+      font-size: 3rem;
+      z-index: 2;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 1;
+    }
+
+    .content {
+      padding: 80px 30px;
+      background-color: #9dc9ef;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    /* Different parallax images */
+    .parallax-1 {
+      background-image: url('https://images.unsplash.com/photo-1493441883526-0ed85220dc0c?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    }
+
+    .parallax-2 {
+
+      background-image: url('https://images.unsplash.com/photo-1530947443747-bcaaacd048d0?q=80&w=2129&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    }
+
+    .parallax-3 {
+      background-image: url('https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    }
+
+    .parallax-4 {
+      background-image: url('https://images.unsplash.com/photo-1518613760656-e172f7dd086d?q=80&w=2120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    }
+
+    @media (max-width: 768px) {
+      .parallax h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+      }
+
+      .content {
+        font-size: 1rem;
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parallax parallax-1">
+    <div class="overlay"></div>
+    <h1>Visual Web Design Matters</h1>
+  </div>
+
+  <div class="content">
+    <h2>Why Design is More Than Looks</h2>
+    <p>Good web design isn’t just about aesthetics — it’s about enhancing user experience. The right layout, visuals, and motion can guide users, tell a story, and build trust. Parallax scrolling is one such effect that adds depth and engagement.</p>
+  </div>
+
+  <div class="parallax parallax-2">
+    <div class="overlay"></div>
+    <h1>What is Parallax Scrolling?</h1>
+  </div>
+
+  <div class="content">
+    <h2>Creating Depth with Motion</h2>
+    <p>Parallax scrolling is a web design technique where background images move slower than foreground content. It creates a 3D illusion while scrolling, making websites feel more dynamic and interactive without overwhelming the user.</p>
+  </div>
+
+  <div class="parallax parallax-3">
+    <div class="overlay"></div>
+    <h1>Design + Performance</h1>
+  </div>
+
+  <div class="content">
+    <h2>Striking a Balance</h2>
+    <p>While parallax effects add beauty, they must be used wisely. Lightweight images, optimized code, and responsive layouts ensure your website remains fast and accessible. This site demonstrates a balance of visual richness and performance.</p>
+  </div>
+
+  <div class="parallax parallax-4">
+    <div class="overlay"></div>
+    <h1>Start Building Creatively</h1>
+  </div>
+
+  <div class="content">
+    <h2>Take This Template Further</h2>
+    <p>You can extend this project by adding animated elements, scroll-based triggers, or integrating real-time data. Parallax is just the beginning — use it to engage, inform, and inspire your users with your creativity.</p>
+    <p><strong>Made by Prachi Thakor • Aspiring Web Developer 💻</strong></p>
+  </div>
+
+</body>
+</html>
